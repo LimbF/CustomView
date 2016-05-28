@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //                myVibrator.cancel();
                 //长震动
                 myVibrator.vibrate(new long[]{100, 100, 100, 1000}, 0);
-                //节奏震动
+                //节奏震动 时间间隔控制
 //                myVibrator.vibrate(new long[]{500, 100, 500, 100}, 0);
                 break;
             case R.id.btn_test_transition_drawable:
@@ -85,6 +85,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
         }
     }
+
 
 //    private void init() {
 //        gridView = (GridView) findViewById(R.id.gridview);
