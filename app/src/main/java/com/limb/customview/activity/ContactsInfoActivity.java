@@ -26,6 +26,8 @@ public class ContactsInfoActivity extends AppCompatActivity {
 
     private TextView showTop;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
