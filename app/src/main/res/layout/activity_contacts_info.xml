@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.limb.customview.activity.ContactsInfoActivity">
+    <ListView
+        android:id="@+id/lv_contacts_info_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        />
+    <com.limb.customview.view.LetterView
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        />
+    <TextView
+        android:id="@+id/showbar"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#FFDCDBDB"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+</RelativeLayout>
