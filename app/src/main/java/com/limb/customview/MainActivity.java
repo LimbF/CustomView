@@ -86,7 +86,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-
 //    private void init() {
 //        gridView = (GridView) findViewById(R.id.gridview);
 //        arrayList = (ArrayList<ImageItem>) PhoneAllPhotoPathUtils.getPhotoListPath(this, false);
