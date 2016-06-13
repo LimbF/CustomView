@@ -91,6 +91,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_test_cust_slidmenu:
                 startActivity(new Intent(MainActivity.this, CustSlidMenuActivity.class));
                 break;
+            //轮播图
             case R.id.btn_test_cust_cycleviewpager:
                 startActivity(new Intent(MainActivity.this, CycleViewpagerActivity.class));
                 break;
