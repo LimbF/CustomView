@@ -10,8 +10,10 @@ import android.widget.GridView;
 
 import com.limb.customview.activity.ContactsInfoActivity;
 import com.limb.customview.activity.CustProgressActivity;
+import com.limb.customview.activity.CustSlidMenuActivity;
 import com.limb.customview.activity.CustViewDragLayoutActivity;
 import com.limb.customview.activity.Custom3DViewActivity;
+import com.limb.customview.activity.CycleViewpagerActivity;
 import com.limb.customview.activity.DynamicAddViewActivity;
 import com.limb.customview.activity.FragmentActivity;
 import com.limb.customview.activity.Main2Activity;
@@ -35,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         myVibrator = (Vibrator) getSystemService(Service.VIBRATOR_SERVICE);
         //测试高斯模糊
         findViewById(R.id.btn_test_gsmh).setOnClickListener(this);
+        //3d自定义view
         findViewById(R.id.btn_test_cust3dview).setOnClickListener(this);
         findViewById(R.id.btn_test_custviewdraglayout).setOnClickListener(this);
         findViewById(R.id.btn_test_zhendong).setOnClickListener(this);
@@ -43,6 +46,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_test_contact_InfoShow).setOnClickListener(this);
         findViewById(R.id.btn_test_progress_style).setOnClickListener(this);
         findViewById(R.id.btn_test_threedPool_manager).setOnClickListener(this);
+        findViewById(R.id.btn_test_cust_slidmenu).setOnClickListener(this);
+        findViewById(R.id.btn_test_cust_cycleviewpager).setOnClickListener(this);
     }
 
     @Override
@@ -82,6 +87,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_test_threedPool_manager:
                 startActivity(new Intent(MainActivity.this, ThreedPoolManagerActivity.class));
+                break;
+            case R.id.btn_test_cust_slidmenu:
+                startActivity(new Intent(MainActivity.this, CustSlidMenuActivity.class));
+                break;
+            case R.id.btn_test_cust_cycleviewpager:
+                startActivity(new Intent(MainActivity.this, CycleViewpagerActivity.class));
                 break;
         }
     }

@@ -12,28 +12,28 @@
             android:id="@+id/btn_test_gsmh"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/test_gaosimohu"
+            android:text="测试高斯模糊"
             android:layout_weight="1"
             />
         <Button
             android:id="@+id/btn_test_cust3dview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/test_cust3d_view"
+            android:text="测试3dview"
             android:layout_weight="1"
             />
         <Button
             android:id="@+id/btn_test_custviewdraglayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/test_custview_dragview"
+            android:text="测试可拖拽的view"
             android:layout_weight="1"
             />
         <Button
             android:id="@+id/btn_test_zhendong"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/test_zhendong"
+            android:text="测试震动"
             />
     </LinearLayout>
     <LinearLayout
@@ -43,13 +43,13 @@
             android:id="@+id/btn_test_transition_drawable"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/test_transition_drawable"
+            android:text="test_transition_drawable"
             />
         <Button
             android:id="@+id/btn_test_fragment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/test_fragment"
+            android:text="测试fragment"
             />
     </LinearLayout>
     <LinearLayout
@@ -59,13 +59,13 @@
             android:id="@+id/btn_test_contact_InfoShow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/test_contact_info"
+            android:text="测试联系人信息"
             />
         <Button
             android:id="@+id/btn_test_progress_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/test_progress_style"
+            android:text="测试进度条样式"
             />
     </LinearLayout>
     <LinearLayout
@@ -75,7 +75,19 @@
             android:id="@+id/btn_test_threedPool_manager"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/test_threedpool_manager"
+            android:text="测试线程池管理"
+            />
+        <Button
+            android:id="@+id/btn_test_cust_slidmenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试侧滑菜单"
+            />
+        <Button
+            android:id="@+id/btn_test_cust_cycleviewpager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试轮播图"
             />
     </LinearLayout>
 </LinearLayout>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">CustomView</string>
     <string name="action_settings">Settings</string>
@@ -7,7 +8,7 @@
     <string name="title_activity_dynamic_add_view">DynamicAddViewActivity</string>
     <string name="title_activity_transition_drawable">TransitionDrawableActivity</string>
 
-<!-- TODO: Remove or change this placeholder text -->
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="test_threedpool_manager">测试线程池管理</string>
     <string name="test_progress_style">测试自定义进度条样式</string>

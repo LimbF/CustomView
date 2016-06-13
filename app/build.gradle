@@ -26,4 +26,5 @@ dependencies {
     compile 'com.android.support:design:23.1.0'
     compile 'com.yalantis:ucrop:1.0.1'
     compile files('libs/pinyin4j-2.5.0.jar')
+    compile project(':viewpagercycle')
 }
