@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.limb.customview.R;
 import com.limb.viewpagercycle.bean.ADInfo;
@@ -69,12 +70,18 @@ public class CycleViewpagerActivity extends AppCompatActivity {
     private CycleViewPager.ImageCycleViewListener mAdCycleViewListener = new CycleViewPager.ImageCycleViewListener() {
 
         @Override
-        public void onImageClick(ADInfo info, int position, View imageView) {
-            if (cycleViewPager.isCycle()) {
-                position = position - 1;
-            }
+        public void onImageClick(Object info, int position, View imageView) {
+            Toast.makeText(CycleViewpagerActivity.this, ((ADInfo) info).getUrl(), Toast.LENGTH_SHORT).show();
 
         }
+
+//        @Override
+//        public void onImageClick(Objects info, int position, View imageView) {
+//            if (cycleViewPager.isCycle()) {
+//                position = position - 1;
+//            }
+//
+//        }
 
     };
 

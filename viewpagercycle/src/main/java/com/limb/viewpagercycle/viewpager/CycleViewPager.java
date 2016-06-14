@@ -16,7 +16,6 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.limb.viewpagercycle.R;
-import com.limb.viewpagercycle.bean.ADInfo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -44,7 +43,7 @@ public class CycleViewPager extends Fragment implements OnPageChangeListener {
 	private int WHEEL = 100; // 转动
 	private int WHEEL_WAIT = 101; // 等待
 	private ImageCycleViewListener mImageCycleViewListener;
-	private List<ADInfo> infos;
+	private List<?> infos;
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -89,7 +88,7 @@ public class CycleViewPager extends Fragment implements OnPageChangeListener {
 		return view;
 	}
 
-	public void setData(List<ImageView> views, List<ADInfo> list, ImageCycleViewListener listener) {
+	public void setData(List<ImageView> views, List<?> list, ImageCycleViewListener listener) {
 		setData(views, list, listener, 0);
 	}
 
@@ -101,7 +100,7 @@ public class CycleViewPager extends Fragment implements OnPageChangeListener {
 	 * @param showPosition
 	 *            默认显示位置
 	 */
-	public void setData(List<ImageView> views, List<ADInfo> list, ImageCycleViewListener listener, int showPosition) {
+	public void setData(List<ImageView> views, List<?> list, ImageCycleViewListener listener, int showPosition) {
 		mImageCycleViewListener = listener;
 		infos = list;
 		this.imageViews.clear();
@@ -393,10 +392,10 @@ public class CycleViewPager extends Fragment implements OnPageChangeListener {
 
 		/**
 		 * 单击图片事件
-		 * 
+		 * @param info
 		 * @param position
 		 * @param imageView
 		 */
-		public void onImageClick(ADInfo info, int postion, View imageView);
+		public void onImageClick(Object info, int position, View imageView);
 	}
 }
