@@ -27,4 +27,7 @@ dependencies {
     compile 'com.yalantis:ucrop:1.0.1'
     compile files('libs/pinyin4j-2.5.0.jar')
     compile project(':viewpagercycle')
+    compile 'com.squareup.okio:okio:1.8.0'
+    compile 'com.squareup.okhttp3:okhttp:3.3.1'
+    compile files('libs/fastjson.jar')
 }

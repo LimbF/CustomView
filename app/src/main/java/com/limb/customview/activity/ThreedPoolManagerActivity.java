@@ -10,7 +10,7 @@ import android.widget.ImageView;
 
 import com.limb.customview.R;
 import com.limb.customview.utils.SmsObserver;
-import com.limb.customview.utils.ThreadPoolManager;
+import com.limb.customview.netutils.ThreadPoolManager;
 
 import java.io.BufferedInputStream;
 import java.io.IOException;
