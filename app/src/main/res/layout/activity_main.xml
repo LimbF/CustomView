@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout   xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:mytitlebar="http://schemas.android.com/apk/res-auto"
     android:layout_height="match_parent" android:fitsSystemWindows="true"
     android:orientation="vertical"
     tools:context=".MainActivity">
@@ -90,4 +91,18 @@
             android:text="测试轮播图"
             />
     </LinearLayout>
+    <com.limb.customview.view.MyTitleBar
+        android:id="@+id/mtb_head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        mytitlebar:leftTextColor="@color/black"
+        mytitlebar:leftTextContent="左边"
+        mytitlebar:leftTextSize="10sp"
+        mytitlebar:centerTextColor="@color/black"
+        mytitlebar:centerTextContent="标题"
+        mytitlebar:centerTextSize="10sp"
+        mytitlebar:rightTextColor="@color/black"
+        mytitlebar:rightTextContent="右边"
+        mytitlebar:rightTextSize="10sp"
+        />
 </LinearLayout>
